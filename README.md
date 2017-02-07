@@ -33,12 +33,6 @@ ACCESS_TOKEN
 
 # なんか動かない時
 
-* LINE には Manager アカウントと Developer アカウントがあります。  
-
-そしてMangerにはフリープランと Developer プランがあるのですが
-フリープランだと動作しません。
-このアカウント体系まじ意味不明。
-
 * LINE Developer画面で WebHookを Verify しても 502 Bad Gateway が帰ってくる
 
 きにせず実機で動作確認してみると動いてます。。。
