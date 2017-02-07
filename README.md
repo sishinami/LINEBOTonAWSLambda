@@ -6,6 +6,8 @@
 
 を平文で実装したものです。
 
+
+# 使い方
 ```
 mkdir linebot
 cd !*
@@ -25,6 +27,9 @@ ACCESS_TOKEN
 <https://developers.line.me/>
 で取得できる Channel Access Token をいれます。
 
+<http://sysop.hatenablog.com/entry/2017/02/05/224817>
+
+でも一応解説してます
 
 # なんか動かない時
 
