@@ -35,7 +35,9 @@ ACCESS_TOKEN
 
 * LINE Developer画面で WebHookを Verify しても 502 Bad Gateway が帰ってくる
 
-きにせず実機で動作確認してみると動いてます。。。
+きにせず実機で動作確認してみると動いてます。。。  
+多分 ChannelSercretの設定がないせい
+
 
 * URLに :443 とか必要なの？
 
