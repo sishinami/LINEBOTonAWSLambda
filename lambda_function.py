@@ -10,7 +10,7 @@ print('Loading function')
 REQUEST_URL = 'https://api.line.me/v2/bot/message/reply'
 
 REQUEST_HEADERS = {
-  'Authorization': 'Bearer ' + os.environ['ENTER_ACCESS_TOKEN'],
+  'Authorization': 'Bearer ' + os.environ['ACCESS_TOKEN'],
   'Content-type': 'application/json'
 }
 
@@ -22,9 +22,14 @@ def lambda_handler(event, context):
   for event in body['events']:
     reply_token = event['replyToken']
     message = event['message']
+    body = {
+        "replyToken": reply_token,
+        "messages" : [{
+            "type" : "text",
+            "text" : message['text']
+            }]
+        }
 
-    body = '{"replyToken":"%s" ,"messages":[{"type":"text","text":"Hello, user"},{"type":"text","text":"May I help you?"}]}' % reply_token
-
-    response = requests.post(REQUEST_URL, headers=REQUEST_HEADERS, data=body)
+    response = requests.post(REQUEST_URL, headers=REQUEST_HEADERS, data=json.dumps(body))
     print(response)
 

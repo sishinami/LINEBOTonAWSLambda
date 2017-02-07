@@ -1,4 +1,4 @@
-# LINE BOT on AWS
+# LINE BOT on AWSLambda
 
 2017/02/07 時点での動作確認済み。
 
