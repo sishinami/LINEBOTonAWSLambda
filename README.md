@@ -9,7 +9,7 @@
 ```
 mkdir linebot
 cd !*
-git clone 
+wget https://raw.githubusercontent.com/sishinami/LINEBOTonAWSLambda/master/lambda_function.py
 pip install request -t .
 zip -r linebot *
 ```
@@ -28,21 +28,21 @@ ACCESS_TOKEN
 
 # なんか動かない時
 
-1. LINE には Manager アカウントと Developer アカウントがあります。  
+* LINE には Manager アカウントと Developer アカウントがあります。  
 
 そしてMangerにはフリープランと Developer プランがあるのですが
 フリープランだと動作しません。
 このアカウント体系まじ意味不明。
 
-2. LINE Developer画面で WebHookを Verify しても 502 Bad Gateway が帰ってくる
+* LINE Developer画面で WebHookを Verify しても 502 Bad Gateway が帰ってくる
 
 きにせず実機で動作確認してみると動いてます。。。
 
-3. URLに :443 とか必要なの？
+* URLに :443 とか必要なの？
 
 2017/02/03時点では不要でした。
 
-4. メッセージは帰ってくるけど、なんか 入れた覚えの無いメッセージが勝手にでる
+* メッセージは帰ってくるけど、なんか 入れた覚えの無いメッセージが勝手にでる
 
 あれだろ？ 
 
