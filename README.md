@@ -12,7 +12,7 @@
 mkdir linebot
 cd !*
 wget https://raw.githubusercontent.com/sishinami/LINEBOTonAWSLambda/master/lambda_function.py
-pip install request -t .
+pip install requests -t .
 zip -r linebot *
 ```
 
